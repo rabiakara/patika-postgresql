@@ -1,13 +1,13 @@
 --1.test veritabanınızda employee isimli sütun bilgileri id(INTEGER), name VARCHAR(50), birthday DATE, email VARCHAR(100) olan bir tablo oluşturalım.--
-/*CREATE TABLE employee (
+CREATE TABLE employee (
 id int primary key,
 name varchar(50),
 birthday date,
 email varchar(100)
-)*/
+)
 
 --2.Oluşturduğumuz employee tablosuna 'Mockaroo' servisini kullanarak 50 adet veri ekleyelim.--
-/*insert into employee (id, name, birthday, email) values (1, 'Ignacio', '2025-10-30', 'iragdale0@cafepress.com');
+insert into employee (id, name, birthday, email) values (1, 'Ignacio', '2025-10-30', 'iragdale0@cafepress.com');
 insert into employee (id, name, birthday, email) values (2, 'Fayth', '2026-09-16', 'fkillshaw1@yolasite.com');
 insert into employee (id, name, birthday, email) values (3, 'Sheppard', '2026-09-22', 'slehoux2@tinypic.com');
 insert into employee (id, name, birthday, email) values (4, 'Dinah', '2025-12-22', 'doates3@columbia.edu');
@@ -56,35 +56,35 @@ insert into employee (id, name, birthday, email) values (46, 'Leontine', '2025-1
 insert into employee (id, name, birthday, email) values (47, 'Lara', '2026-08-27', 'lmaffione1a@live.com');
 insert into employee (id, name, birthday, email) values (48, 'Enriqueta', '2026-10-06', 'esoaper1b@eepurl.com');
 insert into employee (id, name, birthday, email) values (49, 'Keri', '2026-07-29', 'kvasilik1c@xinhuanet.com');
-insert into employee (id, name, birthday, email) values (50, 'Melita', '2025-12-15', 'mbroker1d@oracle.com');*/
+insert into employee (id, name, birthday, email) values (50, 'Melita', '2025-12-15', 'mbroker1d@oracle.com');
 
 --3.Sütunların her birine göre diğer sütunları güncelleyecek 5 adet UPDATE işlemi yapalım.--
-/*UPDATE employee
+UPDATE employee
 SET birthday = '2026-10-09', email = 'xxx@gmail.com'
-WHERE name LIKE 'A%';*/
+WHERE name LIKE 'A%';
 
-/*UPDATE employee
+UPDATE employee
 SET birthday = '2026-10-10', email = 'yyy@gmail.com'
-WHERE name LIKE '%a%a%';*/
+WHERE name LIKE '%a%a%';
 
-/*UPDATE employee
+UPDATE employee
 SET name = 'sss', email = 'sss@gmail.com'
-WHERE birthday = '2026-02-04';*/
+WHERE birthday = '2026-02-04';
 
-/*UPDATE employee
+UPDATE employee
 SET name = 'lii', birthday = '2025-10-25'
-WHERE email LIKE '%li%';*/
+WHERE email LIKE '%li%';
 
-/*UPDATE employee
+UPDATE employee
 SET birthday = '2023-12-10', email = 'hhh@gmail.com'
-WHERE name IN ('Graig','Nolly','Ignacio');*/
+WHERE name IN ('Graig','Nolly','Ignacio');
 
 --4.Sütunların her birine göre ilgili satırı silecek 5 adet DELETE işlemi yapalım.--
-/*DELETE FROM employee WHERE name LIKE '_____';*/
-/*DELETE FROM employee WHERE id%2=0;*/
-/*DELETE FROM employee WHERE birthday = '2025-10-27';*/
-/*DELETE FROM employee WHERE email LIKE '%n%e%';*/
-/*DELETE FROM employee WHERE name NOT IN('Vin');*/
+DELETE FROM employee WHERE name LIKE '_____';
+DELETE FROM employee WHERE id%2=0;
+DELETE FROM employee WHERE birthday = '2025-10-27';
+DELETE FROM employee WHERE email LIKE '%n%e%';
+DELETE FROM employee WHERE name NOT IN('Vin');
 
 
 
